@@ -1,6 +1,6 @@
 # 公开构建记录
 
-来源release：20261013-market-reviewed，输入manifest SHA256：21c98f7a2f0f9d7bfa8b3d118ab94d8e6e372882653ac347f34bf87762db65ee。
+来源release：20261014-market-reviewed-r2，输入manifest SHA256：a9bde8f7caf3b7c95804189b626648951cc4f376fe2e829238eb60a8770e0a7e。
 
 完整图表数据和运行JS从该release保留，公开事件及团队摘要来自显式已审查content输入；历史正文保留，日报标题按行情日期校正并保留旧URL；新报告来自本期research。移除完整输入下载、私有来源区和raw明细。来源署名Tushare。
 
