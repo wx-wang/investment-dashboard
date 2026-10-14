@@ -1,7 +1,7 @@
 # 公开构建记录
 
-来源release：20261014-structure-v3-reviewed-r3，输入manifest SHA256：dfdfc360a790f955cbce1423d83608d6ee89db68c39166c6b0f11c09c906b3af。
+来源release：20261013-market-reviewed，输入manifest SHA256：21c98f7a2f0f9d7bfa8b3d118ab94d8e6e372882653ac347f34bf87762db65ee。
 
-完整图表数据和运行JS从该release保留，公开事件及团队摘要来自显式已审查content输入；历史报告原样复制，新报告来自本期research。移除完整输入下载、私有来源区和raw明细。来源署名Tushare。
+完整图表数据和运行JS从该release保留，公开事件及团队摘要来自显式已审查content输入；历史正文保留，日报标题按行情日期校正并保留旧URL；新报告来自本期research。移除完整输入下载、私有来源区和raw明细。来源署名Tushare。
 
 构建与校验分离；请运行audit/check_public.py并另做真实浏览器验收。此文件不声称浏览器或线上验收已通过。
