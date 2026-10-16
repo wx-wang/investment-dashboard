@@ -42,3 +42,4 @@ function values(s,option){
 function nearest(points,target,position){let index=0,distance=Infinity;points.forEach((p,i)=>{const d=Math.abs(position(p)-target);if(d<distance){distance=d;index=i;}});return index;}
 const api={prior,options,values,nearest};if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.MacroChart=api;
 })(typeof window!=='undefined'?window:globalThis);
+
