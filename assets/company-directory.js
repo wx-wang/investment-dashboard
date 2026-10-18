@@ -62,4 +62,8 @@
   window.addEventListener('hashchange', () => { selectHash(); search.value = ''; render(); document.getElementById(window.location.hash.slice(1))?.scrollIntoView(); });
   render();
   if (window.location.hash) document.getElementById(window.location.hash.slice(1))?.scrollIntoView({behavior: 'instant', block: 'start'});
+  const initialHash = window.location.hash;
+  window.addEventListener('load', () => {
+    if (initialHash && window.location.hash === initialHash) document.getElementById(initialHash.slice(1))?.scrollIntoView({behavior: 'instant', block: 'start'});
+  }, {once: true});
 })();

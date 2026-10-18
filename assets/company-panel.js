@@ -108,4 +108,7 @@
   });
   render();
   if (initialHash) document.getElementById(initialHash)?.scrollIntoView({behavior: 'instant', block: 'start'});
+  window.addEventListener('load', () => {
+    if (initialHash && window.location.hash.slice(1) === initialHash) document.getElementById(initialHash)?.scrollIntoView({behavior: 'instant', block: 'start'});
+  }, {once: true});
 })();
