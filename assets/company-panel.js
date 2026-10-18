@@ -58,7 +58,7 @@
       }
     }
     const label = tabs.find(tab => tab.dataset.categoryTab === active).childNodes[0].textContent.trim();
-    count.textContent = label + ' · 显示 ' + shown.size + ' / ' + total.size + ' 只A股 · ' + associations + ' 条业务关联' + (filtering ? ' · 已筛选' : ' · 当前大类全部展开');
+    count.textContent = label + '重点观察 · 显示 ' + shown.size + ' / ' + total.size + ' 只A股 · ' + associations + ' 条业务关联' + (filtering ? ' · 指标已筛选，地图保持完整' : ' · 当前大类全部展开');
     empty.hidden = shown.size !== 0;
   }
   for (const tab of tabs) {
@@ -84,6 +84,19 @@
     });
   }
   search.addEventListener('input', render);
+  for (const link of document.querySelectorAll('[data-reveal-node]')) {
+    link.addEventListener('click', () => {
+      search.value = '';
+      three.checked = false;
+      pullback.checked = false;
+      render();
+    });
+  }
+  window.addEventListener('hashchange', () => {
+    const target = document.getElementById(window.location.hash.slice(1));
+    const panel = target?.closest('.cp-category');
+    if (panel) { active = panel.dataset.category; render(); target.scrollIntoView(); }
+  });
   three.addEventListener('change', render);
   pullback.addEventListener('change', render);
   reset.addEventListener('click', () => {
@@ -94,4 +107,5 @@
     search.focus();
   });
   render();
+  if (initialHash) document.getElementById(initialHash)?.scrollIntoView({behavior: 'instant', block: 'start'});
 })();
