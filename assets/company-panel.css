@@ -119,3 +119,41 @@ td[data-label="收盘与涨跌"]>.cp-number{font-size:20px;font-weight:650;color
  .company-panel{padding-top:22px}.company-panel .cp-page-heading h1{font-size:26px}.cp-tabs{gap:0 22px;margin-top:21px}.cp-tabs a{font-size:15px;gap:6px}.cp-category-heading{display:block}.cp-research-date{display:block;margin-top:8px}.cp-search{min-width:100%;max-width:none}.cp-controls{gap:9px 16px}.cp-filters{font-size:12px;gap:14px;padding-bottom:4px}#company-reset{padding:4px 0}.cp-result-count{margin-bottom:23px}.cp-chain-heading{display:block}.cp-topic-link{display:inline-block;margin-top:10px}.cp-chain-heading h3{font-size:18px}.cp-node-heading{padding:15px}.cp-table,.cp-table tbody{display:block}.cp-table colgroup,.cp-table thead{display:none}.cp-table .cp-company{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0 16px;margin:0 15px;padding:16px 0;border-bottom:1px solid var(--cp-line)}.cp-table .cp-company:last-child{border:0}.cp-table tbody th,.cp-table td{display:block;padding:0;border:0;min-width:0}.cp-table tbody th{grid-column:1/-1;padding-bottom:16px}.cp-table td{border-top:1px solid #e9eef4;padding:12px 0 4px;margin-top:3px}.cp-table td::before{content:attr(data-label);font-size:10px;color:#8a96a6;display:block;margin-bottom:8px}.cp-table td[data-label="回踩观察"]{grid-column:1/-1;display:block;margin-top:14px;padding-top:12px}.cp-table td[data-label="价格距均线"]{grid-column:1/-1}.cp-distance{display:inline-flex;margin:2px 28px 8px 0;gap:12px}.cp-metric-detail{display:block;margin-top:3px;padding-top:0;border:0}.cp-table .cp-number{font-size:13px}.cp-table td[data-label="收盘与涨跌"]>.cp-number{font-size:23px}.cp-direction-row{max-width:200px}.cp-line-days{max-width:200px}.cp-three-lines{max-width:200px}.cp-pullback-trend{display:flex;gap:26px;flex-wrap:wrap}.cp-pullback-trend .cp-direction-row{gap:15px}.cp-atr-distance{justify-content:flex-start;gap:18px}.cp-mini-chart{max-width:360px}.cp-mini-chart svg{max-height:130px}.cp-mini-chart figcaption{justify-content:flex-start;padding-left:15%}.cp-node-notes{padding:10px 15px}.cp-node-notes ul{display:block}.cp-node-notes li{margin:4px 0}.cp-business{font-size:13px}.cp-evidence{margin-top:8px}.cp-company-title>span:first-child{font-size:17px}.cp-node-heading>div{gap:7px 11px}.cp-meta{gap:4px 17px}.cp-days{font-size:10px}.cp-category-heading h2{font-size:22px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* The industry sheet is always expanded, independently of metric filters. */
+.cp-overview{margin:20px 0 38px;scroll-margin-top:20px}
+.cp-overview-title{display:flex;align-items:baseline;gap:12px 24px;flex-wrap:wrap}
+.cp-overview-title h3{font-size:19px;margin:0}.cp-overview-title>span,.cp-overview-title>a{font-size:12px}
+.cp-overview-title>span{color:var(--cp-muted)}.cp-overview-title>a{margin-left:auto}
+.cp-map-legend,.cp-map-footnote{font-size:11px;color:var(--cp-muted);margin:9px 0 13px}
+.cp-map-table{width:100%;table-layout:fixed;border-collapse:collapse;border:1px solid #b9c9dc;background:#fff;font-size:12px}
+.cp-map-table th,.cp-map-table td{border:1px solid #cbd7e5;text-align:left;vertical-align:top;padding:13px 12px;overflow-wrap:anywhere}
+.cp-map-table thead th{background:#254c79;color:#fff;font-size:12px;font-weight:600;padding:12px}
+.cp-map-table thead th:first-child{width:12%}.cp-map-table tbody>tr>th{background:#eaf0f8;font-size:13px;line-height:1.7}
+.cp-map-table tbody>tr>th a{text-decoration:none}.cp-map-table td:nth-child(5){background:#f6f7fc}
+.cp-map-node+.cp-map-node{margin-top:16px;padding-top:13px;border-top:1px solid #e0e7ef}
+.cp-map-node-title{font-weight:700;font-size:13px;text-decoration:none;line-height:1.6;display:block}
+.cp-map-role{font-size:10px;color:#7b8796;display:block;margin:2px 0 7px}
+.cp-map-companies{display:flex;gap:5px 10px;flex-wrap:wrap}
+.cp-map-company{font-size:12px;line-height:1.6;text-decoration:none;color:#243d5f!important}
+.cp-map-company small{font-size:9px;display:block;color:#8291a4;font-family:ui-monospace,Consolas,monospace}
+.cp-map-classifications{margin-top:9px;display:flex;flex-wrap:wrap;gap:4px 9px}
+.cp-map-classification{font-size:10px;line-height:1.6;text-decoration:none;color:#5d7696!important}
+.cp-map-classification:hover,.cp-map-company:hover,.cp-map-node-title:hover{text-decoration:underline}
+.cp-map-gap{color:#8a96a7;font-size:10px}.cp-map-relations{margin-top:10px}
+.cp-map-relations ul{font-size:12px;color:var(--cp-muted);padding-left:20px;columns:2;column-gap:35px}
+.cp-map-relations li{break-inside:avoid;margin-bottom:9px}.cp-map-relations b{font-weight:500;color:var(--cp-ink)}
+.cp-detail-intro{border-top:2px solid #254c79;padding-top:18px}.cp-detail-intro h3{font-size:22px;margin:0 0 9px}.cp-detail-intro p{font-size:12px;color:var(--cp-muted);margin:5px 0}
+.cp-directory-scope{font-size:12px;color:var(--cp-muted);max-width:1050px;margin:18px 0}.cp-directory-scope strong{font-weight:500;color:#38597e}
+.cp-directory-search{margin-top:22px}.cp-directory-heading{margin:26px 0 22px}.cp-directory-heading h2{font-size:23px;margin:0}.cp-directory-heading p{font-size:12px;color:var(--cp-muted);margin:7px 0}.cp-directory-heading>a{font-size:12px}
+.cp-directory-group{border:1px solid #cbd7e5;background:#fff;display:grid;grid-template-columns:240px minmax(0,1fr);margin:0 0 15px;scroll-margin-top:18px}
+.cp-directory-group>header{background:#edf3fb;border-right:1px solid #cbd7e5;padding:18px}.cp-directory-group h3{font-size:16px;margin:4px 0 13px}.cp-directory-group h3 span{font-size:11px;font-weight:400;color:#6c8099;margin-left:10px}
+.cp-directory-group header>small{font-size:10px;color:#627793}.cp-directory-group header>p{font-size:11px;line-height:1.8;color:#7c8b9f}.cp-directory-map-note{margin-bottom:0}
+.cp-directory-companies{list-style:none;padding:14px 18px;margin:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px 16px;align-content:start}
+.cp-directory-companies li{min-width:0;overflow-wrap:anywhere;font-size:12px;border-bottom:1px solid #edf0f5;padding:3px 0 9px;line-height:1.6}
+.cp-directory-companies strong{font-size:12px;font-weight:500;display:block}.cp-directory-companies code{font:10px ui-monospace,Consolas,monospace;color:#788a9e;display:block}
+.cp-directory-companies a{text-decoration:none}.cp-directory-companies a:hover strong{text-decoration:underline}.cp-directory-companies small{font-size:9px;color:#527daf;display:block}
+@media(max-width:1050px){.cp-map-table th,.cp-map-table td{padding:10px 8px}.cp-map-node-title{font-size:12px}.cp-map-company{font-size:11px}.cp-directory-group{grid-template-columns:200px minmax(0,1fr)}.cp-directory-companies{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:760px){
+ .cp-overview-title{gap:4px 15px}.cp-overview-title>a{margin-left:0;flex-basis:100%}.cp-map-table,.cp-map-table tbody{display:block}.cp-map-table{border:0;background:none}.cp-map-table thead{display:none}.cp-map-table tbody>tr{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);margin-bottom:17px;border:1px solid #b9c9dc;background:#fff}.cp-map-table tbody>tr>th{grid-column:1/-1;border:0;background:#254c79;padding:10px 12px}.cp-map-table tbody>tr>th a{color:#fff}.cp-map-table td{display:block;border:0;border-top:1px solid #cbd7e5;padding:12px;min-width:0}.cp-map-table td:nth-child(odd){border-left:1px solid #cbd7e5}.cp-map-table td:before{content:attr(data-stage);display:block;font-size:10px;font-weight:600;color:#46668c;border-bottom:1px solid #e2e8ef;padding-bottom:7px;margin-bottom:10px}.cp-map-node-title{font-size:13px}.cp-map-company{font-size:12px}.cp-map-relations ul{columns:1}.cp-directory-group{display:block}.cp-directory-group>header{border-right:0;border-bottom:1px solid #cbd7e5;padding:13px 15px}.cp-directory-group h3{margin-bottom:6px}.cp-directory-group header>p{margin:4px 0}.cp-directory-companies{grid-template-columns:repeat(2,minmax(0,1fr));padding:12px 15px;gap:8px 16px}.cp-directory-companies strong{font-size:13px}.cp-directory-companies code{font-size:11px}.cp-detail-intro h3{font-size:20px}
+}
