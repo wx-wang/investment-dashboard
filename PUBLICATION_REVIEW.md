@@ -1,7 +1,1 @@
-# 公开构建记录
-
-来源release：20261014-market-reviewed-r2，输入manifest SHA256：a9bde8f7caf3b7c95804189b626648951cc4f376fe2e829238eb60a8770e0a7e。
-
-完整图表数据和运行JS从该release保留，公开事件及团队摘要来自显式已审查content输入；历史正文保留，日报标题按行情日期校正并保留旧URL；新报告来自本期research。移除完整输入下载、私有来源区和raw明细。来源署名Tushare。
-
-构建与校验分离；请运行audit/check_public.py并另做真实浏览器验收。此文件不声称浏览器或线上验收已通过。
+2026-10-23 publication: indices/valuation through October 22; industry/breadth/margin through October 21; unchanged full chart baseline through October 20. Macro and news increment reviewed with original public evidence. No private social content, personal finances, health or credentials. 413 repository tests and 160 incremental market checks passed. Post-deployment independent cloud browser QA pending.
